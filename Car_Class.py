@@ -28,4 +28,13 @@ class Car(object):
 		else:	
 			wheels = 4
 			return  wheels
+
+	def drive(self, x):
+		
+		if self.car_type == 'trailer':
+			self.speed = 77
+			return self.speed
+		else:
+			self.speed = int(math.pow(x,3))
+			return self.speed
 		
